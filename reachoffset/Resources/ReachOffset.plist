@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enable</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Auto Offset</string>
+			<key>footerText</key>
+			<string>Increment Offset changes your offset by the set amount each time you provoke the reachability.
+Timed Offset sets the Offset based on the time between your tap.
+Quick Taps - Bigger offset
+Slow Taps - Smaller offset
+Flip Timed Offset will flip the Quick and Slow taps functionality.
+Note: Increment Offset and Timed Offset are not meant to be used togather so please disabled one or the other.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isOffsetChanging</string>
+			<key>label</key>
+			<string>Increment Offset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>offsetChange</string>
+			<key>default</key>
+			<real>0.01</real>
+			<key>min</key>
+			<real>0.01</real>
+			<key>max</key>
+			<real>0.5</real>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isTimeOffsetEnabled</string>
+			<key>label</key>
+			<string>Timed Offset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isReverseTimeEnabled</string>
+			<key>label</key>
+			<string>Flip Timed Offset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Reachability Offset</string>
+			<key>footerText</key>
+			<string>Set the offset of reachability</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isOffsetEnabled</string>
+			<key>label</key>
+			<string>Custom Offset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>y</string>
+			<key>default</key>
+			<real>0.5</real>
+			<key>min</key>
+			<real>0.1</real>
+			<key>max</key>
+			<real>0.9</real>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Tap Interval</string>
+			<key>footerText</key>
+			<string>Set the max interval between taps
+Recommend numbers: 1-2 if using the Timed Offset</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isIntervalEnabled</string>
+			<key>label</key>
+			<string>Custom Interval</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>		
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>interval</string>
+			<key>default</key>
+			<real>0.5</real>
+			<key>min</key>
+			<real>0.2</real>
+			<key>max</key>
+			<real>3.0</real>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Taps Required</string>
+			<key>footerText</key>
+			<string>Set the taps required to provoke reachability.
+Requires respring in order for taps required to take effect.
+Recommended number: 1-3, 2-3 if using Timed Offset</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isTapsEnabled</string>
+			<key>label</key>
+			<string>Custom Taps</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>taps</string>
+			<key>default</key>
+			<integer>2</integer>
+			<key>min</key>
+			<integer>1</integer>
+			<key>max</key>
+			<integer>5</integer>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+            <key>label</key>
+            <string>Restart SpringBoard</string>
+            <key>action</key>
+            <string>respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Keep Alive</string>
+			<key>footerText</key>
+			<string>Set the keep alive time</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isKeepAliveEnabled</string>
+			<key>label</key>
+			<string>Custom Keep Alive</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>key</key>
+			<string>isKeepAliveUnlimited</string>
+			<key>label</key>
+			<string>Always Keep Alive</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>key</key>
+			<string>keepAlive</string>
+			<key>default</key>
+			<real>10</real>
+			<key>min</key>
+			<real>5</real>
+			<key>max</key>
+			<real>20</real>
+			<key>defaults</key>
+			<string>com.dgh0st.reachoffset</string>
+			<key>PostNotification</key>
+			<string>com.dgh0st.reachoffset/settingschanged</string>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+			<key>footerText</key>
+			<string>Enjoy the tweak :)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>action</key>
+			<string>email</string>
+			<key>label</key>
+			<string>Email Support</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>action</key>
+			<string>donate</string>
+			<key>label</key>
+			<string>Donate</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>action</key>
+			<string>follow</string>
+			<key>label</key>
+			<string>Follow on twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerAlignment</key>
+			<integer>1</integer>
+			<key>footerText</key>
+			<string>reachoffset Â© 2015 DGh0st</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>ReachOffset</string>
+</dict>
+</plist>
