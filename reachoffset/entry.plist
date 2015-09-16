@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = ReachOffset;
+	cell = PSLinkCell;
+	detail = ReachOffsetListController;
+	icon = ReachOffset.png;
+	isController = 1;
+	label = ReachOffset;
+    };
+}
